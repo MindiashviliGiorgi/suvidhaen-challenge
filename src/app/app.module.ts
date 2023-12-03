@@ -11,6 +11,9 @@ import { CurrentOpeningsPageComponent } from './pages/current-openings-page/curr
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { WelcomeHomeComponent } from './components/welcome-home/welcome-home.component';
+import { ProjectsHomeComponent } from './components/projects-home/projects-home.component';
+import { YoutubeVideosComponent } from './components/youtube-videos/youtube-videos.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,15 @@ import { FooterComponent } from './components/footer/footer.component';
     CurrentOpeningsPageComponent,
     ContactUsPageComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    WelcomeHomeComponent,
+    ProjectsHomeComponent,
+    YoutubeVideosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
