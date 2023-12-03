@@ -1,1 +1,16 @@
-<p>projects-home works!</p>
+<div class="projects-data-main">
+  <div class="projects-container">
+    <ul *ngFor="let project of projects">
+      <li>
+        <div class="project-container">
+          <div class="project-avatar">
+            <img src="{{ project.avatar }}">
+          </div>
+          <div class="project-title">
+            <h2>{{ project.title }}</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

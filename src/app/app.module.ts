@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { WelcomeHomeComponent } from './components/welcome-home/welcome-home.component';
 import { ProjectsHomeComponent } from './components/projects-home/projects-home.component';
 import { YoutubeVideosComponent } from './components/youtube-videos/youtube-videos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { YoutubeVideosComponent } from './components/youtube-videos/youtube-vide
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,86 @@
+.projects-data-main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: top;
+  .projects-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20px;
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    &::-webkit-scrollbar {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 3px #020a31;
+      height: 10px;
+    }
+    &::-webkit-scrollbar-thumb  {
+      background: #5c77f8;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      height: 10px;
+      padding: 5px;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      column-gap: 30px;
+      align-items: center;
+      li {
+        list-style: none;
+        cursor: pointer;
+        width: 410px;
+        height: auto;
+        padding: 10px;
+        .project-container {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 0px;
+          box-shadow: 0px 0px 3px #cacaca;
+          transition: 0.2s;
+          border-radius: 10px;
+          &:hover {
+            box-shadow: 0px 0px 10px #000;
+            transition: 0.2s;
+          }
+          .project-avatar {
+            width: 100%;
+            height: 200px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            img {
+              width: 100%;
+              border-top-right-radius: 10px;
+              border-top-left-radius: 10px;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .project-title {
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0,0,0,.2);
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            h2 {
+              font-size: 18px;
+              font-weight: 300;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}

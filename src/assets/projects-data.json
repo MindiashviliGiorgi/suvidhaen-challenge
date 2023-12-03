@@ -1,0 +1,38 @@
+[
+  {
+    "id" : "1",
+    "avatar" : "/assets/images/projects/project1.jpg",
+    "title" : "RailMadad Analytics",
+    "about" : "Our expertise lies in extracting valuable insights from RailMadad Data, enabling informed decisions and actionable outcomes. By analyzing this data, we drive a deeper understanding of rail operations, enhancing efficiency, safety, and overall performance."
+  },
+  {
+    "id" : "2",
+    "avatar" : "/assets/images/projects/project2.jpg",
+    "title" : "SwachDNR App",
+    "about" : "Our integrated platform, comprising a website and mobile app, streamlines employee performance record management. Currently utilized at Patna and Danapur Junction, it offers a user-friendly and effective solution. Simplifying the process, it ensures efficient tracking and assessment of employee performance records."
+  },
+  {
+    "id" : "3",
+    "avatar" : "/assets/images/projects/project3.jpg",
+    "title" : "AWMS - Automated Water Monitoring System",
+    "about" : "Revolutionizing train water management, our IoT solution provides real-time updates on water tank storage to upcoming stations. Through an attached GSM module, this innovative system ensures timely communication, optimizing water availability and utilization during train journeys."
+  },
+  {
+    "id" : "4",
+    "avatar" : "/assets/images/projects/project4.jpg",
+    "title" : "Gyan",
+    "about" : "A comprehensive assessment solution designed to offer diverse evaluation methods for individuals. Currently in development, this system aims to provide a range of assessment approaches, enabling a thorough and multifaceted analysis of an individual's capabilities and performance."
+  },
+  {
+    "id" : "5",
+    "avatar" : "/assets/images/projects/project5.png",
+    "title" : "Automated Monitoring System",
+    "about" : "This integrated solution merges embedded systems and software to real-time monitor solar panel efficiency. It records solar cell and battery voltage, facilitating remote device oversight. Presently deployed at IIT Patna for enhanced performance tracking."
+  },
+  {
+    "id" : "6",
+    "avatar" : "/assets/images/projects/project6.jpg",
+    "title" : "ACP Monitoring",
+    "about" : "An IoT-driven railway enhancement system records and tallies Alarm Chain Pulling (ACP) instances, capturing GPS location, trigger time, and resultant train delay. Real-time transmission via attached GSM ensures seamless data relay, optimizing operations and safety measures."
+  }
+]
