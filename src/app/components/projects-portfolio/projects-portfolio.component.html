@@ -1,0 +1,25 @@
+<div class="projects-portfolio-main">
+  <div class="title">
+    <h1>Projects</h1>
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Search with title" 
+    [(ngModel)]="searchValue" (input)="searchPorject()">
+    <img src="/assets/images/search.png">
+  </div>
+  <div class="projects-list">
+    <ng-container *ngFor="let project of projects">
+      <ng-container  *ngIf="searchValue === '' || project.title.toLowerCase().includes(searchValue)">
+        <div class="container">
+          <div class="container-left">
+            <img src="{{ project.avatar }}">
+          </div>
+          <div class="container-right">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.about }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

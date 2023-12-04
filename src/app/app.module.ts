@@ -16,6 +16,8 @@ import { ProjectsHomeComponent } from './components/projects-home/projects-home.
 import { YoutubeVideosComponent } from './components/youtube-videos/youtube-videos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { ProjectsPortfolioComponent } from './components/projects-portfolio/projects-portfolio.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     WelcomeHomeComponent,
     ProjectsHomeComponent,
     YoutubeVideosComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    ProjectsPortfolioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
