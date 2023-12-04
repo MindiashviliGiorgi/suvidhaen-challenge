@@ -15,6 +15,7 @@ import { WelcomeHomeComponent } from './components/welcome-home/welcome-home.com
 import { ProjectsHomeComponent } from './components/projects-home/projects-home.component';
 import { YoutubeVideosComponent } from './components/youtube-videos/youtube-videos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     WelcomeHomeComponent,
     ProjectsHomeComponent,
-    YoutubeVideosComponent
+    YoutubeVideosComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
