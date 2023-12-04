@@ -1,1 +1,50 @@
-<p>teams-page works!</p>
+<app-header/>
+<div class="teams-page-main">
+  <div class="team-founders">
+    <div class="title">
+      <h1>MEET OUR TEAM - FOUNDERS</h1>
+      <span></span>
+    </div>
+    <div class="founders">
+      <ng-container *ngFor="let founder of teamFoundres">
+        <div class="container-f">
+          <div class="avatar">
+            <img src="{{ founder.avatar }}">
+          </div>
+          <div class="name">
+            <h3>{{ founder.name }}</h3>
+            <p>{{ founder.education }}</p>
+            <p>{{ founder.experience }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <div class="about">
+      <p>
+        Python based analytical tools and Real Time monitoring Apps are our keys<br>
+        IoT enabled and ML modeling based solution are our strength
+      </p>
+    </div>
+  </div>
+  <div class="rd-team">
+    <div class="rd-title">
+      <h1>MEET OUR TEAM - R & D TEAM</h1>
+      <span></span>
+    </div>
+    <div class="members">
+      <ng-container *ngFor="let member of rdTeam">
+        <div class="member-container">
+          <div class="member-avatar">
+            <img src="{{ member.avatar }}">
+          </div>
+          <div class="member-about">
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.education }}</p>
+            <p>{{ member.experience }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
+<app-footer/>
