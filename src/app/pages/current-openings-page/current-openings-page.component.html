@@ -1,1 +1,23 @@
-<p>current-openings-page works!</p>
+<app-header/>
+<div class="current-opnenings-main">
+  <div class="title">
+    <h1>CURRENT JOB OPENINGS</h1>
+    <span></span>
+  </div>
+  <div class="list">
+    <ng-container *ngFor="let job of jobs">
+      <div class="container">
+        <div class="container-left">
+          <img src="{{ job.avatar }}">
+        </div>
+        <div class="container-right">
+          <h1>{{ job.position }}</h1>
+          <p>{{ job.experience }}</p>
+          <p>{{ job.mode_of_work }}</p>
+          <p>{{ job.salary_stipend }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+<app-footer/>
