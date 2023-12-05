@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-us-page.component.scss']
 })
 export class ContactUsPageComponent {
+  isLoading : boolean = false;
+
+  constructor() {}
+
+  ngOnInit(): void {
+    this.onMapLoading()
+  }
+
+  onMapLoading() {
+    setTimeout(() => {
+      this.isLoading = true;
+    }, 600)
+  }
 
 }

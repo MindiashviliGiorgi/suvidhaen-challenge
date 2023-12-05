@@ -6,6 +6,8 @@
   flex-direction: column;
   row-gap: 10px;
   box-shadow:  -4px 0px 10px #414141;
+  position: relative;
+  z-index: 10;
   .footer-up {
     display: flex;
     align-items: top;
