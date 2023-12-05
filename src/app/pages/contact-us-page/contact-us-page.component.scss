@@ -59,3 +59,48 @@
 .turn-off-img {
   display: none;
 }
+
+@media (max-width : 1250px) {
+  .contact-page-main {
+    padding: 90px 30px 50px 30px;
+    flex-direction: row;
+    column-gap: 30px;
+  }
+}
+
+@media (max-width : 1110px) {
+  .contact-page-main {
+    padding: 90px 30px 50px 30px;
+    flex-direction: column;
+    row-gap: 30px;
+    .contact-left {
+      order: 2;
+    }
+    .contact-right {
+      order: 1;
+    }
+  }
+}
+
+@media (max-width : 600px) {
+  .contact-page-main {
+    padding: 90px 30px 50px 30px;
+    flex-direction: column;
+    row-gap: 30px;
+    .contact-left {
+      order: 2;
+      .details {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+    .contact-right {
+      order: 1;
+    }
+  }
+}
