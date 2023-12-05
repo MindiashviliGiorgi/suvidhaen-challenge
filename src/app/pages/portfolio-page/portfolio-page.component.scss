@@ -3,3 +3,9 @@
   min-height: 90vh;
   padding: 90px 90px 50px 90px;
 }
+
+@media (max-width : 1250px) {
+  .portfolio-page-main {
+    padding: 90px 30px 50px 30px;
+  }
+}

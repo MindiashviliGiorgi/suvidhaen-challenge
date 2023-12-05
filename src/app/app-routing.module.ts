@@ -10,6 +10,11 @@ import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.
 const routes: Routes = [
   {
     path : '',
+    redirectTo : '/home',
+    pathMatch : 'full'
+  },
+  {
+    path : 'home',
     component : HomePageComponent
   },
   {

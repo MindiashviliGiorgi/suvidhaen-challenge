@@ -169,3 +169,25 @@
     }
   }
 }
+
+@media (max-width : 1250px) {
+  .footer-main {
+    padding: 20px 30px 10px 30px;
+  }
+}
+@media (max-width : 860px) {
+  .footer-main {
+    padding: 20px 30px 10px 30px;
+    .footer-up {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      .quick-links,
+      .services,
+      .subscribe {
+        display: flex;
+        flex-basis: 200;
+      }
+    }
+  }
+}

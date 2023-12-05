@@ -3,3 +3,9 @@
   min-height: 100vh;
   padding: 50px 90px;
 }
+
+@media (max-width : 1250px) {
+  .home-page-main {
+    padding: 50px 30px;
+  }
+}

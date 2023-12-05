@@ -7,6 +7,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   header_variable : boolean = false;
+  menu : boolean = false;
 
   constructor() {};
 

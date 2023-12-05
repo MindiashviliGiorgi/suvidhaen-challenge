@@ -72,3 +72,19 @@
     }
   }
 }
+
+@media (max-width : 1110px) {
+  .testimonials-main {
+    .containers-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: top;
+      justify-content: center;
+      .container {
+        display: flex;
+        flex-basis: 200;
+      }
+    }
+  }
+}

@@ -4,28 +4,31 @@
       <img src="/assets/images/logo.png"/>
     </div>
     <div class="header-right">
+      <div class="burger-menu">
+        <img (click)="menu = true;" [src]="'/assets/images/burger.png'">
+      </div>
       <ul>
-        <li [routerLink]="'/'">
+        <li [routerLink]="'/home'" routerLinkActive="active-link">
           <img src="/assets/images/home.png">
           <a>Home</a>
         </li>
-        <li [routerLink]="'/portfolio'">
+        <li [routerLink]="'/portfolio'" routerLinkActive="active-link">
           <img src="/assets/images/portfolio.png">
           <a>Portfolio</a>
         </li>
-        <li  [routerLink]="'/teams'">
+        <li  [routerLink]="'/teams'" routerLinkActive="active-link">
           <img src="/assets/images/groups.png">
           <a>Teams</a>
         </li>
-        <li  [routerLink]="'/careers'">
+        <li  [routerLink]="'/careers'" routerLinkActive="active-link">
           <img src="/assets/images/careers.png">
           <a>Careers</a>
         </li>
-        <li [routerLink]="'/currentOpenings'">
+        <li [routerLink]="'/currentOpenings'" routerLinkActive="active-link">
           <img src="/assets/images/openings.png">
           <a>Current Openings</a>
         </li>
-        <li [routerLink]="'/contact'">
+        <li [routerLink]="'/contact'" routerLinkActive="active-link">
           <img src="/assets/images/phone.png">
           <a>Contact Us</a>
         </li>
@@ -33,3 +36,19 @@
     </div>
   </div>
 </header>
+
+<div *ngIf="menu" class="menu">
+  <span (click)="menu = false;">
+    <img [src]="'/assets/images/cancel.png'">
+  </span>
+  <div class="menu-links">
+    <ul>
+      <li><a [routerLink]="'/home'">Home</a></li>
+      <li><a [routerLink]="'/portfolio'">Portfolio</a></li>
+      <li><a [routerLink]="'/teams'">Teams</a></li>
+      <li><a [routerLink]="'/careers'">Careers</a></li>
+      <li><a [routerLink]="'/currentOpenings'">Current Openings</a></li>
+      <li><a [routerLink]="'/contact'">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
